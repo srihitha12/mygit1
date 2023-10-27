@@ -1,0 +1,2 @@
+python EnergyEfficient.py
+pause

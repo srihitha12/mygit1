@@ -1,0 +1,33 @@
+#Import the libraies on google drive
+
+import os, sys
+from google.colab import drive
+drive.mount('/content/mnt')
+nb_path = '/content/notebooks'
+os.symlink('/content/mnt/My Drive/Colab Notebooks', nb_path)
+sys.path.insert(0, nb_path)  # or append(nb_path)
+
+#install command
+#!pip install --target=$nb_path   library
+
+
+STEP 1:
+!pip install --target=$nb_path easyocr --no-deps
+
+STEP2:
+!pip install --target=$nb_path python-bidi
+
+STEP3:
+!pip install --target=$nb_pathopencv-python-headless==4.5.2.52
+
+OPTIONAL
+!pip install --target=$nb_path opencv-python-headless
+
+uninstall
+!pip install --target=$nb_path opencv-python-headless==4.5.5.6
+
+STEP4:(OPTIONAL)
+!pip install --target=$nb_path git+https://github.com/neuml/txtai#egg=txtai[pipeline]
+
+STEP5:
+!pip install --target=$nb_path easyocr

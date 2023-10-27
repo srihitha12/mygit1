@@ -1,0 +1,14 @@
+import pytesseract
+import shutil
+import os
+import random
+from PIL import Image
+
+image_path_in_colab="image4.jpg"
+
+extractedInformation = pytesseract.image_to_string(Image.open(image_path_in_colab))
+print(extractedInformation)
+
+f = open("myfile.txt", "a")
+f.writelines(extractedInformation)
+f.close()

@@ -1,0 +1,9 @@
+Console sign-in 
+
+URLhttps://816424561696.signin.aws.amazon.com/console
+
+User name
+test-user-501
+
+Console password
+)2nmQj3=
